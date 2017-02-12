@@ -1,0 +1,24 @@
+<div>
+    <p> {{title}}</p>
+    <ul>
+        <li> one</li>
+        <li> two</li>
+    </ul>
+    <p> {{title}} from iteration</p>
+     <table border="1" *ngIf = 'employees && employees.length'>
+        <thead>
+            <tr>
+            <th>Emp ID</th>
+            <th> Name</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr *ngFor = 'let employee of employees'>
+            <td>{{employee.empID}}</td>
+            <td>{{employee.name}}</td>
+        </tr>
+     </tbody>
+    </table>
+    <h2>Coming from Parent thru input</h2>
+     <p>{{companyName}}</p>
+</div>
